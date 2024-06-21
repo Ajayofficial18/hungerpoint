@@ -3,12 +3,13 @@ import axios from 'axios';
 import styles from './Content.module.css';
 import { FaStar } from "react-icons/fa";
 import { LuIndianRupee } from "react-icons/lu";
-
+let url="https://hungerpoint.onrender.com";
+// let localUrl="http://localhost:3002";
 const Content = () => {
     const [foodItems, setFoodItems] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3002/food')
+        axios.get(`${url}/food`)
             .then(response => {
                 setFoodItems(response.data);
             })
@@ -23,7 +24,7 @@ const Content = () => {
                 {foodItems.map((item, index) => (
                     <div className={styles.innerBox} key={index}>
                         <div className={styles.images}>
-                            <img className={styles.imgInfo} src={`http://localhost:3002/${item.image}`} alt="food item" />
+                            <img className={styles.imgInfo} src={`${url}/${item.image}`} alt="food item" />
                         </div>
                         <div className={styles.shopAnadRate}>
                             <span>{item.shop}</span>
