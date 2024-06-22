@@ -11,17 +11,18 @@
     gap: 10rem;
     text-transform: uppercase;
 }
-.Product1{
+.ulcont{
     display: flex;
-    
+    flex-direction: column;
 }
-.Product{
+.ulcls{
     list-style: none;
     font-size: small;
     text-transform: capitalize;
     text-align: start;
+    padding: 0;
 }
-.Company{
+/* .Company{
     list-style: none;
     font-size: small;
     text-transform: capitalize;
@@ -34,4 +35,4 @@
 }
 .Social{
     list-style: none;
-}
+} */
