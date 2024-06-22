@@ -7,7 +7,7 @@ HungerPoint is a web application designed to showcase a variety of food items, t
 ## Getting Started with Create React App
 This project was bootstrapped with Create React App.
 
-Here's the [Live site](hungerpoint2.netlify.app)
+Here's the [Live site](https://hungerpoint2.netlify.app/)
 ## Installation
 
 Install my-project with npm
